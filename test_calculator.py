@@ -1,15 +1,16 @@
 from calculator import add, subtract, multiply, divide
 
-def add(a, b):
-    return a + b
+def test_add():
+    assert add(2, 3) == 5
 
-def subtract(a, b):
-    return a - b
+def test_subtract():
+    assert subtract(10, 4) == 6
 
-def multiply(a, b):
-    return a * b
+def test_multiply():
+    assert multiply(5, 3) == 15
 
-def divide(a, b):
-    if b == 0:
-        return "Cannot divide by zero"
-    return a / b
+def test_divide():
+    assert divide(10, 2) == 5
+
+def test_divide_by_zero():
+    assert divide(10, 0) == "Cannot divide by zero"
