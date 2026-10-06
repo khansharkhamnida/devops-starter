@@ -44,4 +44,4 @@ jobs:
         run: pytest
 
       - name: Run Security Scan (Bandit)
-        run: bandit -r . -x *_test.py,test_*.py
+        run: bandit -r . -x test_calculator.py
